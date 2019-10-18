@@ -10,7 +10,7 @@ router.get('404', function(req, res, next) {
     res.render('404.hbs');
 });
 
-router.get('news', function(req, res, next) {
+router.get('/news', function(req, res, next) {
     res.render('news.hbs', {newsArticleList});
 });
 
@@ -18,3 +18,21 @@ router.get('news/:id', function(req, res, next) {
     res.set('Cache-Control', 'public, max-age=300, s-maxage=600');
     res.render('newsArticle.hbs', {articleTitle, articleContent, commentObject});
 });
+
+router.get('/forums', function(req,res,next) {
+
+});
+
+router.get('/forums/:category', function(req,res,next) {
+
+});
+
+router.get('/forums/:category/:thread', function(req,res,next) {
+
+});
+
+router.get('forums/:category/:thread/:post', function(req,res,next) {
+
+});
+
+module.exports = router;

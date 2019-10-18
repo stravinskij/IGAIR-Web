@@ -1,8 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
 }
 
-a {
-  color: #00B7FF;
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(51,51,51);
+
+}
+ul.navbar > li.navbar-hero, ul.navbar > li.navbar-item {
+  float: left;
+}
+ul.navbar > li.navbar-hero > a, ul.navbar > li.navbar-item > a {
+  display: block;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.navbar > li.navbar-hero > a:hover, ul.navbar > li.navbar-item > a:hover {
+  background-color: rgb(255,0,0);
+}
+ul.navbar > li.navbar-hero {
+  font-size: 18px;
+}
+ul.navbar > li.navbar-item {
+  font-size: 14px;
 }
