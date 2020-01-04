@@ -3,27 +3,52 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  background-image: url("../images/flyingover.jpg");
 }
-nav > ul.navbar-content {
-  list-style-type: none;
+
+.navbar {
+  background-color: rgb(20,20,20,0.8);
+}
+
+div.navbar-content {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: rgb(51,51,51);
 }
 
-nav > ul.navbar-content > li.navbar-item {
-  float: left;
-}
-
-nav > ul.navbar-content > li.navbar-item > a {
+a.navbar-brand {
   display: block;
-  color: rgb(255,255,255);
-  text-align: center;
   padding: 14px 16px;
+  font-size: 24px;
+  color: rgb(220,0,0);
+  text-align: center;
   text-decoration: none;
 }
 
-nav > ul.navbar-content > li.navbar-item > a:hover {
-  background-color: rgb(255,0,0);
+ul.navbar-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0%;
+  text-align: center;
+}
+
+li.navbar-link {
+  float: left;
+}
+li.navbar-link__hero {
+  float: left;
+}
+
+li.navbar-link > a {
+  display: block;
+  color: rgb(255,255,255);
+  text-align: center;
+  padding: 20px 16px;
+  height: 100%;
+  text-decoration: none;
+  
+}
+
+li.navbar-link > a:hover {
+  background-color: rgba(220,0,0,0.8);
 }

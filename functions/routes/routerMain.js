@@ -11,4 +11,8 @@ router.get('404', function(req, res, next) {
     res.render('404.hbs');
 });
 
+router.get('search/:searchTerm', function(req,res,next) {
+
+});
+
 module.exports = router;
