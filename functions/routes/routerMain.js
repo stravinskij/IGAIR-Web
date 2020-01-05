@@ -11,6 +11,11 @@ router.get('/about', function(req, res, next) {
     res.render('about.hbs', {title: 'About IGAIR'});
 });
 
+router.get('/structure', function(req, res, next) {
+    res.set('Cache-control', 'public, max-age=300, s-maxage=600');
+    res.render('structure.hbs', {title: 'IGAIR Structure'});
+});
+
 router.get('/store', function(req, res, next) {
     res.set('Cache-control', 'public, max-age=300, s-maxage=600');
     res.render('store.hbs', {title: 'IGAIR Store'});
