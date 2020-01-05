@@ -3,7 +3,17 @@ const router = express.Router();
 
 router.get('/', function(req, res, next) {
     res.set('Cache-control', 'public, max-age=300, s-maxage=600');
-    res.render('home.hbs');
+    res.render('home.hbs', {title: 'Intergalactic Airlines'});
+});
+
+router.get('/about', function(req, res, next) {
+    res.set('Cache-control', 'public, max-age=300, s-maxage=600');
+    res.render('about.hbs', {title: 'About IGAIR'});
+});
+
+router.get('/store', function(req, res, next) {
+    res.set('Cache-control', 'public, max-age=300, s-maxage=600');
+    res.render('store.hbs', {title: 'IGAIR Store'});
 });
 
 router.get('404', function(req, res, next) {
