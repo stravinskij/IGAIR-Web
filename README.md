@@ -1,3 +1,6 @@
+![GitHub Actions Deploy Status](/workflows/deploy/badge.svg)
+
+
 # Intergalactic Airlines Website
 
 This repository contains the source code for the  website of the
