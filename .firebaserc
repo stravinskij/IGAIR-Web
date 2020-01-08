@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "igair-organizationhub"
+    "default": "igair-organizationhub",
+    "jp-test": "jp-test-project-fd8e0"
   }
 }

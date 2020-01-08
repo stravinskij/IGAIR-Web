@@ -9,3 +9,5 @@ router.get('/', function(req, res, next) {
 router.get('/:item', function(req, res, next) {
     res.set('Cache-control', 'public, max-age=300, s-maxage=600');
 });
+
+module.exports = router;
