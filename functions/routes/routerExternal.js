@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', function(req, res, next) {
+/** router.get('/', function(req, res, next) {
     res.redirect('/')
-});
+}); */
 
 router.get('/org', function(req, res, next) {
     res.redirect(200,"https://robertsspaceindustries.com/orgs/IGAIR");
