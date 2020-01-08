@@ -12,6 +12,7 @@ var hbs = exphbs.create({
 
 /* Routers */
 const mainRouter = require("./routes/routerMain");
+const externalRouter = require("./routes/externalRouter");
 const accountRouter = require("./routes/routerUserAccount");
 const newsRouter = require("./routes/routerNews");
 
@@ -22,6 +23,7 @@ app.disable("x-powered-by"); // Security best practices
 
 // configure Routers
 app.use('/', mainRouter);
+app.use('/ext', externalRouter);
 app.use('/news', newsRouter);
 app.use('/user', accountRouter);
 
